@@ -2,7 +2,7 @@ import { Schema, model } from 'mongoose';
 
 const PersonajeSchema = new Schema({
     name: { type: String, require: true },
-    alte: { type: String, require: true },
+    alte: { type: String, require: true, unique: true },
     role: { type: String, require: true },
 });
 
